@@ -1,34 +1,55 @@
-// question 1
-var firstVar;
+// Question 1
 
-// question 2
-var name = "Camilla";
+var petArray = ["cat","cow","dog"];
 
-// question 3
-var number = 10;
+// Question 2
 
-// question 4
-var division = 20 / 5;
+console.log(petArray[1]);
 
-// question 5
-var animal = "frog";
-typeof(animal);
-var animalType = "string";
-console.log(animalType);
+// Question 3
 
-// question 6
-var orderHasShipped = true;
+petArray.push("sheep");
 
-// question 7
-if(orderHasShipped === true) {
-    console.log("true");
+// Question 4
+
+console.log(petArray.length);
+
+// Question 5
+
+var catObject = {
+    name: "Whiskers",
+    colour: "Orange",
+    age: 5
+};
+
+// Question 6
+
+console.log(catObject.age)
+
+// Question 7
+
+var catArray = [
+    {
+    name: "Whiskers",
+    colour: "Orange",
+    age: 5
+}
+];
+
+// Question 8
+
+for(var i = 0; i < catArray.length; i++) {
+    console.log(catArray[i].name);
+    console.log(catArray[i].colour);
+    console.log(catArray[i].age);
 }
 
-else {
-    console.log("false");
+// Question 9
+
+function logToConsole(numberOne) {
+    console.log(numberOne);
 }
 
-// question 8
-for(var count = 0; count <= 9; count++) {
-    console.log(count);
-}
+// Question 10
+
+logToConsole("donkey");
